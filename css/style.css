@@ -416,11 +416,13 @@ input.NFI-filename {
 
 /* Forms END */
 
+.page-content,
 .form-item,
 .clearfix {
   zoom:1;
 }
 
+.page-cotnent:after,
 .form-item:after,
 .clearfix:after {
   content:".";
@@ -1011,4 +1013,150 @@ table.timetable span {
 	line-height:18px;
 	font-weight:600;
 	text-transform:uppercase;
+}
+
+ul.breadcrumbs {
+	list-style: none;
+	margin: -28px 0 23px 0;
+	font-size: 11px;
+	line-height: 15px;
+	color: #393939;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+ul.breadcrumbs li {
+	padding: 0 16px 0 0;
+	margin: 0 9px 0 0;
+	background: none;
+	float: left;
+	position: relative;
+}
+
+ul.breadcrumbs li:after {
+  content:"";
+	width:8px;
+	height:11px;
+	background:url(../images/breadcrumbs-rarr.png) 0 0 no-repeat;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-7px;
+}
+
+ul.breadcrumbs li.active:after {
+  display:none;
+}
+
+.news-list {
+  margin:0 -10px;
+}
+
+.news-item {
+  float:left;
+	width:33.3333%;
+	padding:0 10px;
+	margin:0 0 40px 0;
+	color:#393939;
+	text-decoration:none;
+}
+
+.news-item:nth-child(3n+1) {
+  clear:left;
+}
+
+.news-item:hover {
+  text-decoration:none;
+}
+
+.news-item .pic {
+  margin:0 0 19px 0;
+}
+
+.news-item .pic img {
+  display:block;
+}
+
+.news-item .ttl {
+  text-transform:uppercase;
+	color:#005e9d;
+	margin:0 0 20px 0;
+}
+
+.news-item:hover .ttl {
+  text-decoration:underline;
+}
+
+.news-item .text {
+	margin:0 0 20px 0;
+}
+
+.news-item .date {
+  color:#acacac;
+}
+
+.page-navigation {
+  text-align:center;
+	font-size:0;
+	line-height:0;
+}
+
+.page-navigation a {
+  display:inline-block;
+	font-size:14px;
+	line-height:20px;
+	min-width:40px;
+	height:24px;
+	text-align:center;
+	border:2px solid #bfd7e6;
+	margin:0 5px;
+}
+
+.page-navigation a.active {
+  background-color:#005e9d;
+	border-color:#005e9d;
+	color:#fff;
+}
+
+.page-navigation .sep {
+  font-size:14px;
+	line-height:20px;
+	display:inline-block;
+	margin:0 9px;
+	color:#005e9d;
+}
+
+table.contacts-table {
+  width:auto;
+	margin:0 0 20px 0;
+	border:none;
+}
+
+.contacts-table td {
+  border:none;
+	vertical-align:top;
+	padding:0 20px 10px 0;
+}
+
+.contacts-table .name {
+  text-transform:uppercase;
+	color:#005e9d;
+}
+
+.contacts-table+h2 {
+  margin-top:46px;
+}
+
+.contacts-map {
+  height:520px;
+	margin:-14px 0 0 0;
+}
+
+.article-pic {
+  float:right;
+	margin:0 0 40px 100px;
+}
+
+.article-pic img {
+  display:block;
 }
